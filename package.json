@@ -1,0 +1,48 @@
+{
+  "name": "app-preview-component",
+  "version": "0.0.1",
+  "description": "A component to elegantly display app screenshots framed by mobile and desktop devices.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:w": "jest --watch",
+    "coverage": "jest --coverage",
+    "start": "webpack --watch",
+    "build": "webpack",
+    "lint": "eslint ./ --ignore-path .gitignore",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "author": {
+    "name": "Daniel Hollcraft",
+    "email": "daniel@hollcraft.com"
+  },
+  "peerDependencies": {
+    "react": "^16.2.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.11.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.3.13",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^8.1.2",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.12.2",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^22.3.0",
+    "react-test-renderer": "^16.2.0"
+  }
+}

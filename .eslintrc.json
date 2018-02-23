@@ -1,0 +1,31 @@
+{
+  "extends": "eslint-config-airbnb",
+  "plugins": ["jest"],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "semi": [
+      1,
+      "never"
+    ],
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+    "class-methods-use-this": "off",
+    "react/prefer-stateless-function": "off",
+    "curly": "off",
+    "nonblock-statement-body-position": "off",
+    "no-lonely-if": "off",
+    "comma-dangle": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-filename-extension": "off",
+    "react/forbid-prop-types": "off",
+    "no-restricted-globals": "off",
+    "no-case-declarations": "off"
+  }
+}

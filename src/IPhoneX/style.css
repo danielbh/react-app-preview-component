@@ -1,0 +1,21 @@
+.container {
+  text-align: center;
+}
+
+.device {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.content {
+  z-index: -1;
+  position: absolute;
+  width: 90%;
+  top: 6.2%;
+  max-height: 87%;
+  left: 5%;
+}
