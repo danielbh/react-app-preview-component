@@ -11,4 +11,4 @@
 - [ ] Add tests
 - [ ] Add instructions on how to use for each component, Maybe deploy storybook?
 
-Devices assets courtest of [Facebook Design](https://facebook.design/devices)
+Devices assets courtesy of [Facebook Design](https://facebook.design/devices)

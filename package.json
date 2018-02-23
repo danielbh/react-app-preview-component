@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "A component to elegantly display app screenshots framed by mobile and desktop devices.",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "danielbh/app-preview-component"
+  },
   "scripts": {
     "test": "jest",
     "test:w": "jest --watch",
