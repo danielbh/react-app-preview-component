@@ -9,6 +9,7 @@
 - [ ] Macbook Pro
 - [ ] Screenshot carrousel
 - [ ] Add tests
-- [ ] Add instructions on how to use for each component, Maybe deploy storybook?
+- [ ] Improve NPM instructions
+- [ ] Add better documentation on how to use each component
 
 Devices assets courtesy of [Facebook Design](https://facebook.design/devices)
