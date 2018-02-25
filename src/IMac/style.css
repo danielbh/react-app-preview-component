@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.iphoneX {
+.imac {
   position: relative;
   display: flex;
   align-items: center;
@@ -11,9 +11,9 @@
   display: inline-block;
 }
 
-.iphoneX .content {
+.imac .content {
   z-index: -1;
   position: absolute;
-  top: 6.2%;
-  right: 9.6%;
+  top: 6.35%;
+  right: 4%;
 }

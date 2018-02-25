@@ -1,15 +1,15 @@
-# app-preview-component
+# react-app-preview-component
 
-Display app previews beautifully with Desktop and Mobile screenshots. Below is a list of best widths and heights of screenshots by device.
+React component to display app previews beautifully with Desktop and Mobile screenshots. Each screenshot can be framed by a specific device. Below is a list of devices with the best widths and heights of screenshots for each device.
 
-| Device        | Width         | Height  | Aspect Ratio
-| ------------- |---------------| --------| --------------|
-| iPhone X      | 242           | 524     | 2.17          |
-| iPhone 8      | 238           | 423     | 1.77          |
-| iPad          | 418           | 559     | 1.34          |
-| Macbook Pro   |               |         |               |
-| iMac          |               |         |               |
-| Pixel 2       |               |         |               |
+| Device        | Width | Height  | Aspect Ratio
+| ------------- |-------| --------| --------------|
+| iPhone X      | 242   | 524     | 0.46          |
+| iPhone 8      | 238   | 423     | 0.56          |
+| iPad          | 418   | 559     | 0.75          |
+| Macbook Pro   |       |         |               |
+| iMac          | 737   | 415     | 1.78          |
+| Pixel 2       |       |         |               |
 
 See the `./storybook` for implementation examples
 

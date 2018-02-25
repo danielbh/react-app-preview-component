@@ -1,11 +1,11 @@
 {
-  "name": "app-preview-component",
-  "version": "0.0.1",
+  "name": "react-app-preview-component",
+  "version": "0.0.2",
   "description": "A component to elegantly display app screenshots framed by mobile and desktop devices.",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "danielbh/app-preview-component"
+    "url": "danielbh/react-app-preview-component"
   },
   "scripts": {
     "test": "jest",
