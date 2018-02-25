@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.iphoneX {
+.ipad {
   position: relative;
   display: flex;
   align-items: center;
@@ -11,9 +11,9 @@
   display: inline-block;
 }
 
-.iphoneX .content {
-  z-index: -1;
-  position: absolute;
-  top: 6.2%;
-  right: 9.5%;
+.ipad .content {
+   z-index: -1;
+   position: absolute;
+   top: 10.5%;
+   right: 8%;
 }

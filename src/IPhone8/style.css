@@ -14,7 +14,7 @@
 .iphone8 .content {
   z-index: -1;
   position: absolute;
-  width: 90%;
   top: 14.5%;
-  left: 5%;
+  z-index: -1;
+  right: 10.2%;
 }

@@ -4,9 +4,9 @@ Display app previews beautifully with Desktop and Mobile screenshots. Below is a
 
 | Device        | Width         | Height  | Aspect Ratio
 | ------------- |---------------| --------| --------------|
-| iPhone X      | 242           | 524     | 2.165         |
+| iPhone X      | 242           | 524     | 2.17          |
 | iPhone 8      | 238           | 423     | 1.77          |
-| iPad          |               |         |               |
+| iPad          | 418           | 559     | 1.34          |
 | Macbook Pro   |               |         |               |
 | iMac          |               |         |               |
 | Pixel 2       |               |         |               |
@@ -25,5 +25,6 @@ See the `./storybook` for implementation examples
 
 **TODO**
 
+### Please help me make this library better by submitting issues or pull requests
 
 Devices assets courtesy of [Facebook Design](https://facebook.design/devices)
