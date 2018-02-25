@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.iphoneX {
+.iphone8 {
   position: relative;
   display: flex;
   align-items: center;
@@ -11,10 +11,10 @@
   display: inline-block;
 }
 
-.iphoneX .content {
+.iphone8 .content {
   z-index: -1;
   position: absolute;
   width: 90%;
-  top: 6.2%;
+  top: 14.5%;
   left: 5%;
 }

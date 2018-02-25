@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import image from './apple_iphone_x_space_grey.png'
+import image from './apple_iphone_8_space_grey.png'
 import './style.css'
 
-const IPhoneX = ({ children }) => (
+const IPhone8 = ({ children }) => (
   <div className="container">
-    <div className="iphoneX">
-      <img src={image} alt="iPhone X Preview" />
+    <div className="iphone8">
+      <img src={image} alt="iPhone 8 Preview" />
       <div className="content">
         {children}
       </div>
@@ -15,8 +15,8 @@ const IPhoneX = ({ children }) => (
 )
 
 
-IPhoneX.propTypes = {
+IPhone8.propTypes = {
   children: PropTypes.element.isRequired
 }
 
-export default IPhoneX
+export default IPhone8
