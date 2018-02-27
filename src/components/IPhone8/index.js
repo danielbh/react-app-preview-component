@@ -1,17 +1,17 @@
 import React from 'react'
 import image from './apple_iphone_8_space_grey.png'
 import { defaultProps, propTypes } from '../../utils/props'
+import Device from '../Device'
 import './style.css'
 
 const IPhone8 = ({ children }) => (
-  <div className="container">
-    <div className="iphone8">
-      <img src={image} alt="iPhone 8 Preview" />
-      <div className="content">
-        {children}
-      </div>
-    </div>
-  </div>
+  <Device
+    className="iphone8"
+    src={image}
+    alt="iPhone 8 Preview"
+  >
+    {children}
+  </Device>
 )
 
 IPhone8.propTypes = propTypes
