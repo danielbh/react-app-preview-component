@@ -2,7 +2,7 @@
 
 React component to display app previews beautifully with Desktop and Mobile screenshots. Each screenshot can be framed by a specific device. Below is a list of devices with the best widths and heights of screenshots for each device.
 
-##### Recommended Sizes for Screenshots
+#### Recommended Sizes for Screenshots
 
 | Device         | Width | Height  | Aspect Ratio
 | ---------------|-------| --------| --------------|
@@ -15,7 +15,7 @@ React component to display app previews beautifully with Desktop and Mobile scre
 
 See the `./storybook` for implementation examples
 
-##### Default Implementation
+#### Default Implementation
 
 ```jsx
 
@@ -27,9 +27,9 @@ import IPhoneXScreenshot from './screenshots/iphone_x_screenshot.png'
 </IPhoneX>
 ```
 
-##### With a Carousel
+#### With a Carousel
 
-###### Props
+##### Props
 
 <table>
 <tbody>
