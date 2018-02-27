@@ -39,19 +39,19 @@ import IPhoneXScreenshot from './screenshots/iphone_x_screenshot.png'
   <td>carousel</td>
   <td>boolean</td>
   <td>false</td>
-  <td>Toggle if images can rotate.</td>
+  <td>Toggle if images can change.</td>
 </tr>
-<tr>
+<!-- <tr>
   <td>changeOnClick</td>
   <td>boolean</td>
   <td>true</td>
   <td>Only change screenshot slide on click. By default <br> carousel will slide automatically on interval.</td>
-</tr>
+</tr> -->
 <tr>
   <td>interval</td>
   <td>float</td>
   <td>2000</td>
-  <td>Toggle if images can rotate.</td>
+  <td>Duration between slide change.</td>
 </tr>
 </tbody>
 </table>
@@ -62,7 +62,7 @@ import IPhoneXScreenshot1 from './screenshots/iphone_x_screenshot1.png'
 import IPhoneXScreenshot2 from './screenshots/iphone_x_screenshot2.png'
 import IPhoneXScreenshot3 from './screenshots/iphone_x_screenshot3.png'
 
-<IPhoneX carousel changeOnClick interval={3000}>
+<IPhoneX carousel interval={3000}>
   <img src={IPhoneXScreenshot} alt="iPhone X Screenshot1" />
   <img src={IPhoneXScreenshot2} alt="iPhone X Screenshot2" />
   <img src={IPhoneXScreenshot3} alt="iPhone X Screenshot3" />

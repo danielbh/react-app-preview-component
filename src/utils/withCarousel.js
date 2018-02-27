@@ -1,8 +1,23 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-const withCarousel = Device => (
-  class Carousel extends Component {
+const withCarousel = Device => {
+  return class Carousel extends Component {
+
+    state = {
+      currentSlideIdx: 0
+    }
+
+    static propTypes = {
+      children:
+        PropTypes.oneOfType([
+          PropTypes.element,
+          PropTypes.array])
+        .isRequired,
+      carousel: PropTypes.bool,
+      changeOnClick: PropTypes.bool,
+      interval: PropTypes.number,
+    }
 
     static defaultProps = {
       carousel: false,
@@ -10,15 +25,24 @@ const withCarousel = Device => (
       interval: 2000,
     }
 
-    static propTypes = {
-      children: PropTypes.element.isRequired,
-      carousel: PropTypes.boolean,
-      changeOnClick: PropTypes.boolean,
-      interval: PropTypes.float,
+    componentDidMount() {
+      const { children, carousel, interval } = this.props
+      if (carousel) {
+        const getNextSlide = () => {
+          const { currentSlideIdx } = this.state
+          return children.length - 1 === currentSlideIdx ? 0 : currentSlideIdx + 1
+        }
+
+        this.interval = setInterval(() => {
+          this.setState({
+            currentSlideIdx: getNextSlide()
+          })
+        }, interval)
+      }
     }
 
-    state = {
-      currentSlideIdx: 0
+    componentWillUnmount() {
+      clearInterval(this.intervalId)
     }
 
     render() {
@@ -28,11 +52,11 @@ const withCarousel = Device => (
 
       return (
         <Device>
-            {children}
+          {children}
         </Device>
       )
     }
   }
-)
+}
 
 export default withCarousel

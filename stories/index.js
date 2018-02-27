@@ -13,6 +13,8 @@ import IPhoneXScreenshot from './screenshots/iphone_x_screenshot.png'
 import IPhone8Screenshot from './screenshots/iphone_8_screenshot.png'
 import IPadScreenshot from './screenshots/ipad_air_2_screenshot.png'
 import IMacScreenShot from './screenshots/imac_screenshot.png'
+import IMacScreenShotNyan1 from './screenshots/imac_screenshot_nyan1.png'
+import IMacScreenShotNyan2 from './screenshots/imac_screenshot_nyan2.png'
 import MacbookProScreenShot from './screenshots/macbook_pro.png'
 import Pixel2Screenshot from './screenshots/pixel_2_screenshot.png'
 
@@ -47,3 +49,13 @@ storiesOf('Devices', module)
       <img src={Pixel2Screenshot} alt="Google Pixel 2 Screenshot" />
     </Pixel2>
   ))
+
+storiesOf('Carousel Demo', module)
+  .add('iMac', () => (
+    <IMac carousel>
+      <img src={IMacScreenShot} alt="iMac Screenshot" />
+      <img src={IMacScreenShotNyan1} alt="iMac Screenshot" />
+      <img src={IMacScreenShotNyan2} alt="iMac Screenshot" />
+    </IMac>
+  ))
+
