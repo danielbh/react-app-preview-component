@@ -1,6 +1,6 @@
 import React from 'react'
 import image from './apple_iphone_8_space_grey.png'
-import { defaultProps, propTypes } from '../utils/props'
+import { defaultProps, propTypes } from '../../utils/props'
 import './style.css'
 
 const IPhone8 = ({ children }) => (

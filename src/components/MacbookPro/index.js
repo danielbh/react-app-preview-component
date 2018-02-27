@@ -1,6 +1,6 @@
 import React from 'react'
 import image from './apple_macbook_pro_13.png'
-import { defaultProps, propTypes } from '../utils/props'
+import { defaultProps, propTypes } from '../../utils/props'
 import './style.css'
 
 const MacbookPro = ({ children }) => (

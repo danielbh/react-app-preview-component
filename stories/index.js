@@ -7,7 +7,7 @@ import {
   IMac,
   MacbookPro,
   Pixel2
-} from '../src'
+} from '../src/components'
 
 import IPhoneXScreenshot from './screenshots/iphone_x_screenshot.png'
 import IPhone8Screenshot from './screenshots/iphone_8_screenshot.png'

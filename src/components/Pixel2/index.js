@@ -1,6 +1,6 @@
 import React from 'react'
 import image from './google_pixel_2_just_black.png'
-import { defaultProps, propTypes } from '../utils/props'
+import { defaultProps, propTypes } from '../../utils/props'
 import './style.css'
 
 const Pixel2 = ({ children }) => (
