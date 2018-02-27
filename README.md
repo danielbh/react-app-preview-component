@@ -17,7 +17,6 @@ See the `./storybook` for implementation examples
 #### Default Implementation
 
 ```jsx
-
 import { IPhoneX } from 'react-app-preview-component'
 import IPhoneXScreenshot from './screenshots/iphone_x_screenshot.png'
 
