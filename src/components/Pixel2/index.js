@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import withCarousel from '../../utils/withCarousel'
 import image from './google_pixel_2_just_black.png'
 import Device from '../Device'
-import { defaultProps, propTypes } from '../../utils/props'
 import './style.css'
 
 const Pixel2 = ({ children }) => (
@@ -14,7 +15,8 @@ const Pixel2 = ({ children }) => (
   </Device>
 )
 
-Pixel2.propTypes = propTypes
-Pixel2.defaultProps = defaultProps
+Pixel2.propTypes = {
+  children: PropTypes.element.isRequired
+}
 
-export default Pixel2
+export default withCarousel(Pixel2)

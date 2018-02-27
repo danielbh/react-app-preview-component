@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import image from './apple_iphone_x_space_grey.png'
-import { defaultProps, propTypes } from '../../utils/props'
+import withCarousel from '../../utils/withCarousel'
 import Device from '../Device'
 import './style.css'
 
@@ -14,7 +15,8 @@ const IPhoneX = ({ children }) => (
   </Device>
 )
 
-IPhoneX.propTypes = propTypes
-IPhoneX.defaultProps = defaultProps
+IPhoneX.propTypes = {
+  children: PropTypes.element.isRequired
+}
 
-export default IPhoneX
+export default withCarousel(IPhoneX)

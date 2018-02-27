@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import image from './apple_imac.png'
 import Device from '../Device'
-import { defaultProps, propTypes } from '../../utils/props'
+import withCarousel from '../../utils/withCarousel'
 import './style.css'
 
 const IMac = ({ children }) => (
@@ -14,7 +15,8 @@ const IMac = ({ children }) => (
   </Device>
 )
 
-IMac.propTypes = propTypes
-IMac.defaultProps = defaultProps
+IMac.propTypes = {
+  children: PropTypes.element.isRequired
+}
 
-export default IMac
+export default withCarousel(IMac)

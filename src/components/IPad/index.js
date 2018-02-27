@@ -1,5 +1,6 @@
 import React from 'react'
-import { defaultProps, propTypes } from '../../utils/props'
+import PropTypes from 'prop-types'
+import withCarousel from '../../utils/withCarousel'
 import Device from '../Device'
 import image from './apple_ipad_air_2_space_gray.png'
 import './style.css'
@@ -14,8 +15,8 @@ const IPad = ({ children }) => (
   </Device>
 )
 
+IPad.propTypes = {
+  children: PropTypes.element.isRequired
+}
 
-IPad.propTypes = propTypes
-IPad.defaultProps = defaultProps
-
-export default IPad
+export default withCarousel(IPad)

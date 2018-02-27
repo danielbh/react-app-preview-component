@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import withCarousel from '../../utils/withCarousel'
 import image from './apple_macbook_pro_13.png'
-import { defaultProps, propTypes } from '../../utils/props'
 import Device from '../Device'
 import './style.css'
 
@@ -14,7 +15,8 @@ const MacbookPro = ({ children }) => (
   </Device>
 )
 
-MacbookPro.propTypes = propTypes
-MacbookPro.defaultProps = defaultProps
+MacbookPro.propTypes = {
+  children: PropTypes.element.isRequired
+}
 
-export default MacbookPro
+export default withCarousel(MacbookPro)
