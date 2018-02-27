@@ -1,6 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import image from './apple_iphone_x_space_grey.png'
+import { defaultProps, propTypes } from '../utils/props'
 import './style.css'
 
 const IPhoneX = ({ children }) => (
@@ -15,8 +15,7 @@ const IPhoneX = ({ children }) => (
 )
 
 
-IPhoneX.propTypes = {
-  children: PropTypes.element.isRequired
-}
+IPhoneX.propTypes = propTypes
+IPhoneX.defaultProps = defaultProps
 
 export default IPhoneX

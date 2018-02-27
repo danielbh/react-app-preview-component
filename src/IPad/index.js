@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { defaultProps, propTypes } from '../utils/props'
 import image from './apple_ipad_air_2_space_gray.png'
 import './style.css'
 
@@ -15,8 +15,7 @@ const IPad = ({ children }) => (
 )
 
 
-IPad.propTypes = {
-  children: PropTypes.element.isRequired
-}
+IPad.propTypes = propTypes
+IPad.defaultProps = defaultProps
 
 export default IPad

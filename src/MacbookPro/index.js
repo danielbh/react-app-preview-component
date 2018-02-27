@@ -1,6 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import image from './apple_macbook_pro_13.png'
+import { defaultProps, propTypes } from '../utils/props'
 import './style.css'
 
 const MacbookPro = ({ children }) => (
@@ -15,8 +15,7 @@ const MacbookPro = ({ children }) => (
 )
 
 
-MacbookPro.propTypes = {
-  children: PropTypes.element.isRequired
-}
+MacbookPro.propTypes = propTypes
+MacbookPro.defaultProps = defaultProps
 
 export default MacbookPro

@@ -1,6 +1,6 @@
 {
   "name": "react-app-preview-component",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A component to elegantly display app screenshots framed by mobile and desktop devices.",
   "main": "dist/index.js",
   "repository": {

@@ -1,6 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import image from './apple_imac.png'
+import { defaultProps, propTypes } from '../utils/props'
 import './style.css'
 
 const IMac = ({ children }) => (
@@ -15,8 +15,7 @@ const IMac = ({ children }) => (
 )
 
 
-IMac.propTypes = {
-  children: PropTypes.element.isRequired
-}
+IMac.propTypes = propTypes
+IMac.defaultProps = defaultProps
 
 export default IMac

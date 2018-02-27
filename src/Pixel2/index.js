@@ -1,9 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import image from './google_pixel_2_just_black.png'
+import { defaultProps, propTypes } from '../utils/props'
 import './style.css'
 
-const MacbookPro = ({ children }) => (
+const Pixel2 = ({ children }) => (
   <div className="container">
     <div className="pixel-2">
       <img src={image} alt="Google Pixel Preview" />
@@ -15,8 +15,7 @@ const MacbookPro = ({ children }) => (
 )
 
 
-MacbookPro.propTypes = {
-  children: PropTypes.element.isRequired
-}
+Pixel2.propTypes = propTypes
+Pixel2.defaultProps = defaultProps
 
-export default MacbookPro
+export default Pixel2
