@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+}
+
+.macbook-pro {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.macbook-pro .content {
+  z-index: -1;
+  position: absolute;
+  top: 6.5%;
+  right: 10%;
+}
