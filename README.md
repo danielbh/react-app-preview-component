@@ -2,6 +2,8 @@
 
 React component to display app previews beautifully with Desktop and Mobile screenshots. Each screenshot can be framed by a specific device. Below is a list of devices with the best widths and heights of screenshots for each device.
 
+#####Recommended Sizes for Screenshots
+
 | Device         | Width | Height  | Aspect Ratio
 | ---------------|-------| --------| --------------|
 | iPhone X       | 242   | 524     | 0.46          |
@@ -15,15 +17,59 @@ See the `./storybook` for implementation examples
 
 #####Default Implementation
 
-**TODO**
+```jsx
+
+import { IPhoneX } from 'react-app-preview-component'
+import IPhoneXScreenshot from './screenshots/iphone_x_screenshot.png'
+
+<IPhoneX>
+  <img src={IPhoneXScreenshot} alt="iPhone X Screenshot" />
+</IPhoneX>
+```
 
 #####With a Carousel
 
-**TODO**
+######Props
 
-#####Add a gif
+<table>
+<tbody>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+<tr>
+  <td>carousel</td>
+  <td>boolean</td>
+  <td>false</td>
+  <td>Toggle if images can rotate.</td>
+</tr>
+<tr>
+  <td>changeOnClick</td>
+  <td>boolean</td>
+  <td>true</td>
+  <td>Only change screenshot on click. By default <br> carousel will slide automatically on interval.</td>
+</tr>
+<tr>
+  <td>interval</td>
+  <td>float</td>
+  <td>2000</td>
+  <td>Toggle if images can rotate.</td>
+</tr>
+</tbody>
+</table>
 
-**TODO**
+```jsx
+import { IPhoneX } from 'react-app-preview-component'
+import IPhoneXScreenshot1 from './screenshots/iphone_x_screenshot1.png'
+import IPhoneXScreenshot2 from './screenshots/iphone_x_screenshot2.png'
+import IPhoneXScreenshot3 from './screenshots/iphone_x_screenshot3.png'
+
+<IPhoneX carousel changeOnClick>
+  <img src={IPhoneXScreenshot} alt="iPhone X Screenshot1" />
+  <img src={IPhoneXScreenshot2} alt="iPhone X Screenshot2" />
+  <img src={IPhoneXScreenshot3} alt="iPhone X Screenshot3" />
+</IPhoneX>
+```
 
 ### Please help me make this library better by submitting issues or pull requests
 
