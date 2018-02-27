@@ -9,7 +9,7 @@ React component to display app previews beautifully with Desktop and Mobile scre
 | iPad           | 418   | 559     | 0.75          |
 | Macbook Pro    | 625   | 390     | 1.6           |
 | iMac           | 737   | 415     | 1.78          |
-| Google Pixel 2 |       |         |               |
+| Google Pixel 2 | 255   | 452     | .56           |
 
 See the `./storybook` for implementation examples
 

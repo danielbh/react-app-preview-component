@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import image from './apple_macbook_pro_13.png'
+import image from './google_pixel_2_just_black.png'
 import './style.css'
 
 const MacbookPro = ({ children }) => (
   <div className="container">
-    <div className="macbook-pro">
-      <img src={image} alt="Macbook Pro Preview" />
+    <div className="pixel-2">
+      <img src={image} alt="Google Pixel Preview" />
       <div className="content">
         {children}
       </div>

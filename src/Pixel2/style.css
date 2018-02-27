@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+}
+
+.pixel-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.pixel-2 .content {
+  z-index: -1;
+  position: absolute;
+  top: 12.9%;
+  right: 7.5%;
+}
