@@ -1318,6 +1318,7 @@ module.exports = checkPropTypes;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Pixel2 = exports.MacbookPro = exports.IMac = exports.IPad = exports.IPhone8 = exports.IPhoneX = exports.withCarousel = undefined;
 
 var _withCarousel = __webpack_require__(3);
 
@@ -1327,15 +1328,13 @@ var _components = __webpack_require__(19);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = {
-  withCarousel: _withCarousel2.default,
-  IPhoneX: _components.IPhoneX,
-  IPhone8: _components.IPhone8,
-  IPad: _components.IPad,
-  IMac: _components.IMac,
-  MacbookPro: _components.MacbookPro,
-  Pixel2: _components.Pixel2
-};
+exports.withCarousel = _withCarousel2.default;
+exports.IPhoneX = _components.IPhoneX;
+exports.IPhone8 = _components.IPhone8;
+exports.IPad = _components.IPad;
+exports.IMac = _components.IMac;
+exports.MacbookPro = _components.MacbookPro;
+exports.Pixel2 = _components.Pixel2;
 
 /***/ }),
 /* 15 */

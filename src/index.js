@@ -8,7 +8,7 @@ import {
   Pixel2
 } from './components'
 
-export default {
+export {
   withCarousel,
   IPhoneX,
   IPhone8,
