@@ -1,26 +1,28 @@
-var path = require('path')
-
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
-    libraryTarget: 'commonjs2'
+    path: __dirname,
+    filename: './dist/index.js'
   },
   module: {
-    rules: [{
-      test: /\.js$/,
-      include: path.resolve(__dirname, 'src'),
-      exclude: /(node_modules|bower_components|dist)/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['env']
-        }
+    rules: [
+      {
+        test: /\.js?$/,
+        exclude: '/(node_modules|bower_components|stories|storybook)/',
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
+      },
+      // use the style-loader/css-loader combos for anything matching the .css extension
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ]
       }
-    }]
-  },
-  externals: {
-    'react': 'commonjs react'
+    ]
   }
 }
