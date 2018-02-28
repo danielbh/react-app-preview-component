@@ -2,8 +2,10 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname,
+    libraryTarget: 'umd',
     filename: './dist/index.js'
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
