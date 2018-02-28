@@ -1,5 +1,7 @@
 # react-app-preview-component
 
+`npm i react-app-preview-component`
+
 React component to display app previews beautifully with Desktop and Mobile screenshots. Each screenshot can be framed by a specific device. Below is a list of devices with the best widths and heights of screenshots for each device.
 
 #### Recommended Sizes for Screenshots
