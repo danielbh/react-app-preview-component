@@ -13,7 +13,7 @@ const withCarousel = Device => {
         PropTypes.oneOfType([
           PropTypes.element,
           PropTypes.array])
-        .isRequired,
+          .isRequired,
       carousel: PropTypes.bool,
       changeOnClick: PropTypes.bool,
       interval: PropTypes.number,
@@ -21,39 +21,54 @@ const withCarousel = Device => {
 
     static defaultProps = {
       carousel: false,
-      changeOnClick: true,
+      changeOnClick: false,
       interval: 2000,
     }
 
-    componentDidMount() {
-      const { children, carousel, interval } = this.props
-      if (carousel) {
-        const getNextSlide = () => {
-          const { currentSlideIdx } = this.state
-          return children.length - 1 === currentSlideIdx ? 0 : currentSlideIdx + 1
-        }
+    constructor() {
+      super()
+      this.getNextSlide = this.getNextSlide.bind(this)
+    }
 
-        this.interval = setInterval(() => {
-          this.setState({
-            currentSlideIdx: getNextSlide()
-          })
-        }, interval)
-      }
+    getNextSlide() {
+      const { currentSlideIdx } = this.state
+      const nextSlideIdx =
+        this.props.children.length - 1 === currentSlideIdx ?
+          0 :
+          currentSlideIdx + 1
+      this.setState({ currentSlideIdx: nextSlideIdx })
+    }
+
+    componentDidMount() {
+      const {
+        children,
+        carousel,
+        interval,
+        changeOnClick
+      } = this.props
+
+      if (carousel && !changeOnClick)
+        this.intervalId = setInterval(this.getNextSlide, interval)
     }
 
     componentWillUnmount() {
-      clearInterval(this.intervalId)
+      this.intervalId && clearInterval(this.intervalId)
     }
 
     render() {
-      const children = this.props.children.length ?
-        this.props.children[this.state.currentSlideIdx] :
-        this.props.children
+
+      const { children, changeOnClick } = this.props
+
+      const currentChildren = children.length ?
+        children[this.state.currentSlideIdx] :
+        children
 
       return (
-        <Device>
-          {children}
-        </Device>
+        <div onClick={this.props.changeOnClick ? this.getNextSlide : undefined}>
+          <Device>
+            {currentChildren}
+          </Device>
+        </div>
       )
     }
   }

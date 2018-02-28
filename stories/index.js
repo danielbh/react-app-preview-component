@@ -51,8 +51,15 @@ storiesOf('Devices', module)
   ))
 
 storiesOf('Carousel Demo', module)
-  .add('iMac', () => (
+  .add('iMac automatically rotate slides', () => (
     <IMac carousel>
+      <img src={IMacScreenShot} alt="iMac Screenshot" />
+      <img src={IMacScreenShotNyan1} alt="iMac Screenshot" />
+      <img src={IMacScreenShotNyan2} alt="iMac Screenshot" />
+    </IMac>
+  ))
+  .add('iMac change slides onClick', () => (
+    <IMac changeOnClick carousel>
       <img src={IMacScreenShot} alt="iMac Screenshot" />
       <img src={IMacScreenShotNyan1} alt="iMac Screenshot" />
       <img src={IMacScreenShotNyan2} alt="iMac Screenshot" />

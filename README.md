@@ -41,12 +41,12 @@ import IPhoneXScreenshot from './screenshots/iphone_x_screenshot.png'
   <td>false</td>
   <td>Toggle if images can change.</td>
 </tr>
-<!-- <tr>
+<tr>
   <td>changeOnClick</td>
   <td>boolean</td>
-  <td>true</td>
+  <td>false</td>
   <td>Only change screenshot slide on click. By default <br> carousel will slide automatically on interval.</td>
-</tr> -->
+</tr>
 <tr>
   <td>interval</td>
   <td>float</td>

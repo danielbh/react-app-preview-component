@@ -26,11 +26,11 @@
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "webpack": "^3.11.0"
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "@storybook/react": "^3.3.13",
+    "webpack": "^3.11.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-eslint": "^8.1.2",
